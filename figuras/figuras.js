@@ -40,3 +40,19 @@ function operacionCirculo(operacion, funcionOperacion){
 const calcularPerimetroCirculo = () => operacionCirculo("perimetro",perimetroCirculo);
 const calcularAreaCirculo = () => operacionCirculo("area",areaCirculo); 
 const calcularDiametroCirculo = () => operacionCirculo("diametro",diametroCirculo); 
+
+
+
+// TRIANGULO ISOSCELES
+const alturaTriangulo = (lado,lado2,base) =>  Math.sqrt(Number(lado)**2 - ((Number(base)**2)/4));
+function operacionTrianguloIsosceles(operacion,funcionOperacion){
+    const ladoI1 = document.getElementById("InputTrianguloIsoscelesLados");
+    const ladoI2 = document.getElementById("InputTrianguloIsoscelesLados2");
+    const baseI = document.getElementById("InputTrianguloIsoscelesBase");
+    const respuesta = document.getElementById("resultadoTrianguloIsosceles");
+    const rpta = funcionOperacion(ladoI1.value, ladoI2.value, baseI.value)
+    if (ladoI1.value == ladoI2.value){
+        respuesta.innerHTML = `La ${operacion} del triangulo es: `+ rpta
+    } else { respuesta.innerHTML = "El triangulo no es isosceles"}
+}
+const calcularAlturaTriangulo = () => operacionTrianguloIsosceles("altura",alturaTriangulo);
