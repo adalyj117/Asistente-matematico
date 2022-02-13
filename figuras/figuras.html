@@ -9,37 +9,40 @@
 </head>
 <body>
     <header>
-        <h2> Figuras geométricas</h2>
+        <h2> 
+            Figuras geométricas 
+            <img class="figura-titulo" src="https://image.flaticon.com/icons/png/512/115/115433.png" >
+        </h2>
         <div class="container">
             <div class="item">
-                <h3>Cuadrado</h3>
+                <h3><img class="figura" src="https://cdn-icons-png.flaticon.com/512/2/2276.png">
+                     Cuadrado</h3>
                 <form>
                     <label for="InputCuadrado"> Escriba cuanto mide cada lado de tu cuadrado</label>
-                    <input id="InputCuadrado" type="number"/>
+                    <input id="InputCuadrado" type="number" placeholder="Lado"/>
                     <button type="button" onclick="calcularPerimetroCuadrado()">
                         Calcular el perímetro
                     </button>
                     <button type="button" onclick="calcularAreaCuadrado()">
                         Calcular el área
                     </button>
-                    <p id="resultadoCuadrado"> </p>
+                    <p class="rpta" id="resultadoCuadrado"> </p>
                 
                 </form>
         
             </div>
             
             <div class="item">
-                <h3>Triangulo</h3>
+                <h3><img class="figura" src="https://static.vecteezy.com/system/resources/previews/001/200/691/non_2x/triangle-png.png"> 
+                    Triangulo</h3>
                 <form>
-                    <label for="InputTrianguloLados"> Escriba cuanto mide los lados de tu triangulo </label>
-                    <input id="InputTrianguloLados" type="number"/>
-                    <input id="InputTrianguloLados2" type="number"/>
+                    <label for="InputTrianguloLados"> Escriba cuanto mide los lados, base y altura de tu triangulo </label>
+                    <br><input id="InputTrianguloLados" type="number" placeholder="Lado 1"/>
+                    <input id="InputTrianguloLados2" type="number" placeholder="Lado 2" />
                     <br>
-                    <label for="InputTrianguloBase"> La base de tu triangulo </label>
-                    <input id="InputTrianguloBase" type="number"/>
+                    <input id="InputTrianguloBase" type="number" placeholder="Base"/>
+                    <input id="InputTrianguloAltura" type="number" placeholder="Altura"/>
                     <br>
-                    <label for="InputTrianguloAltura"> La altura de tu triangulo </label>
-                    <input id="InputTrianguloAltura" type="number"/>
                     <button type="button" onclick="calcularPerimetroTriangulo()">
                         Calcular el perímetro
                     </button>
@@ -47,16 +50,18 @@
                         Calcular el área
                     </button>
                     
-                    <p id="resultadoTriangulo"> </p>
+                    <p class="rpta" id="resultadoTriangulo"> </p>
                 
                 </form>
             </div>
             
             <div class="item">
-                <h3>Circulo</h3>
+                <h3><img class="figura" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTptO4K_ycn1oXhwHyNNgp6GvhL9bNSHKQj5w&usqp=CAU">
+                    Circulo</h3>
                 <form>
                     <label for="InputCirculo"> Escriba cuanto mide el radio de tu circulo</label>
-                    <input id="InputCirculo" type="number"/>
+                    <br>
+                    <input id="InputCirculo" type="number" placeholder="Radio"/>
                     <button type="button" onclick="calcularPerimetroCirculo()">
                         Calcular el perímetro
                     </button>
@@ -66,25 +71,25 @@
                     <button type="button" onclick="calcularDiametroCirculo()">
                         Calcular el diametro
                     </button>
-                    <p id="resultadoCirculo"> </p>
+                    <p class="rpta" id="resultadoCirculo"> </p>
                 
                 </form>
             </div>
             
             <div class="item">
-                <h3>Triangulo isosceles</h3>
-                <form>
-                    <label for="InputTrianguloIsoscelesLados"> Escriba cuanto mide los lados de tu triangulo isosceles </label>
-                    <input id="InputTrianguloIsoscelesLados" type="number"/>
-                    <input id="InputTrianguloIsoscelesLados2" type="number"/>
+                <h3> <img class="figura" src="https://static.vecteezy.com/system/resources/previews/001/200/691/non_2x/triangle-png.png"> Triangulo isosceles</h3>
+                <form class="">
+                    <label for="InputTrianguloIsoscelesLados"> Escriba cuanto mide los lados y base de tu triangulo isosceles </label>
                     <br>
-                    <label for="InputTrianguloIsoscelesBase"> La base de tu triangulo isosceles </label>
-                    <input id="InputTrianguloIsoscelesBase" type="number"/>
+                    <input id="InputTrianguloIsoscelesLados" type="number" placeholder="Lado"/>
+                    <input id="InputTrianguloIsoscelesLados2" type="number" placeholder="Lado"/>
+                    <input id="InputTrianguloIsoscelesBase" type="number" placeholder="Base"/>
+                    <br>
                     <button type="button" onclick="calcularAlturaTriangulo()">
                         Calcular la altura
                     </button>
                     
-                    <p id="resultadoTrianguloIsosceles"> </p>
+                    <p class="rpta" id="resultadoTrianguloIsosceles"> </p>
                 
                 </form>
             </div>
