@@ -1,9 +1,9 @@
 .container {
     text-align: justify;
-    background-image: url();
     display: grid; /*    para convertir el contenedor en grid (grillas)*/
     grid-template-columns: 670px 670px;
     grid-auto-rows: 320px;
+
 }
 
 .item {
@@ -11,7 +11,7 @@
     margin: 10px;
     padding: 30px;
     padding-top: 10px;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/000/626/167/non_2x/geometric-abstract-grey-background-for-bussines-templates-website-wallpapers-vector.jpg);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/626/167/non_2x/geometric-abstract-grey-background-for-bussines-templates-website-wallpapers-vector.jpg); 
     font-size: 1.5rem;
     font-family: "Comic Sans MS", cursive, sans-serif;
     align-content: center;
@@ -21,6 +21,7 @@ h2 {
     font-size: 2.5rem;
     text-align: center;
     font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
 }
 .rpta {
     text-align: center;
@@ -44,4 +45,8 @@ form {
 }
 .figura-titulo{
     width: 50px;
+}
+
+body{
+    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/21775wide.jpg);
 }

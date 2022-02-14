@@ -56,3 +56,4 @@ function operacionTrianguloIsosceles(operacion,funcionOperacion){
     } else { respuesta.innerHTML = "El triangulo no es isosceles"}
 }
 const calcularAlturaTriangulo = () => operacionTrianguloIsosceles("altura",alturaTriangulo);
+
