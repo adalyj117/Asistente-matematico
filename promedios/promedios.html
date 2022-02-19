@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedios</title>
+    <link rel="stylesheet" href="./promedios.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <form>
+                <label for="listaIngresada"> Ingrese sus valores separados por comas</label>
+                <input id="listaIngresada" type="text" 
+                placeholder="Exam: 1,2,4"
+                />
+                <br>
+                <button type="button" onclick="calcularPromedio()">Calcular promedio</button>
+                <button type="button" onclick="calcularMediana()">Calcular mediana</button>
+                <button type="button" onclick="calcularModa()">Calcular moda</button>
+            </form>
+            <p id="respuesta"> respuesta</p>
+
+        </div>
+
+
+    </header>
+    
+</body>
+<script src="./promedios.js"></script>
+</html>

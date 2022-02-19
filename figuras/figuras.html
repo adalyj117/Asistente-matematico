@@ -19,7 +19,7 @@
                      Cuadrado</h3>
                 <form>
                     <label for="InputCuadrado"> Escriba cuanto mide cada lado de tu cuadrado</label>
-                    <input id="InputCuadrado" type="number" placeholder="Lado"/>
+                    <input id="InputCuadrado" type="number" placeholder="Lado" min="0" required/>
                     <button type="button" onclick="calcularPerimetroCuadrado()">
                         Calcular el perímetro
                     </button>
@@ -37,11 +37,11 @@
                     Triangulo</h3>
                 <form>
                     <label for="InputTrianguloLados"> Escriba cuanto mide los lados, base y altura de tu triangulo </label>
-                    <br><input id="InputTrianguloLados" type="number" placeholder="Lado 1"/>
-                    <input id="InputTrianguloLados2" type="number" placeholder="Lado 2" />
+                    <br><input id="InputTrianguloLados" type="number" placeholder="Lado 1" min="0"/>
+                    <input id="InputTrianguloLados2" type="number" placeholder="Lado 2" min="0" />
                     <br>
-                    <input id="InputTrianguloBase" type="number" placeholder="Base"/>
-                    <input id="InputTrianguloAltura" type="number" placeholder="Altura"/>
+                    <input id="InputTrianguloBase" type="number" placeholder="Base" min="0"/>
+                    <input id="InputTrianguloAltura" type="number" placeholder="Altura" min="0"/>
                     <br>
                     <button type="button" onclick="calcularPerimetroTriangulo()">
                         Calcular el perímetro
@@ -61,7 +61,7 @@
                 <form>
                     <label for="InputCirculo"> Escriba cuanto mide el radio de tu circulo</label>
                     <br>
-                    <input id="InputCirculo" type="number" placeholder="Radio"/>
+                    <input id="InputCirculo" type="number" placeholder="Radio" min="0"/>
                     <button type="button" onclick="calcularPerimetroCirculo()">
                         Calcular el perímetro
                     </button>
@@ -83,9 +83,9 @@
                          Escriba cuanto mide los lados y base de tu triangulo isosceles 
                     </label>
                     <br>
-                    <input id="InputTrianguloIsoscelesLados" type="number" placeholder="Lado"/>
-                    <input id="InputTrianguloIsoscelesLados2" type="number" placeholder="Lado"/>
-                    <input id="InputTrianguloIsoscelesBase" type="number" placeholder="Base"/>
+                    <input id="InputTrianguloIsoscelesLados" type="number" placeholder="Lado" min="0"/>
+                    <input id="InputTrianguloIsoscelesLados2" type="number" placeholder="Lado" min="0"/>
+                    <input id="InputTrianguloIsoscelesBase" type="number" placeholder="Base" min="0"/>
                     <br>
                     <button type="button" onclick="calcularAlturaTriangulo()">
                         Calcular la altura
@@ -97,6 +97,7 @@
             </div>
     
         </div>
+
 
     </header>
     <script src="./figuras.js"></script>

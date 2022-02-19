@@ -24,12 +24,26 @@
                     <p id="respuesta">  Respuesta</p>
                     <br>
                 </div>
-                
-
-
             </form>
         </div>
 
+        <div class="container">
+            <h3 class="titulo"> Descuentos por cupones</h3>
+            <p class="descripcion">Halle el precio que debe pagar por su producto con descuento por cupones!!</p>
+            <br>
+            <form>
+                <label for="precioSinCupones">Escriba el precio de su producto: </label>
+                <br><input id="precioSinCupones" type="number" placeholder="Precio">
+                <br>
+                <label for="codigoCupon">Escriba el codigo de su cupón: </label>
+                <br><input id="codigoCupon" type="text" placeholder="Codigo">
+                <br><button type="button" onclick="precioConDescuentoCupon()"> Hallar precio con descuento </button>
+                <div class="respuesta">
+                    <p id="respuestaDescuentoCupon">  Respuesta</p>
+                    <br>
+                </div>
+            </form>
+        </div>
 
     </header>
 

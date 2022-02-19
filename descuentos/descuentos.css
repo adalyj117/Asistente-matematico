@@ -28,7 +28,7 @@ body{
 
 input {
     width: 100%;
-    background-color: #979191;
+    background-color: #c0c0c0;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid white;
@@ -63,4 +63,8 @@ button {
     background-color: #b12730;
 
      
+}
+
+.opciones {
+    width: 100%;
 }
