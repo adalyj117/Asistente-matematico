@@ -10,11 +10,13 @@
 <body>
     <header>
         <div class="container">
+            <h2> Calcule la media, mediana y moda </h2>
             <form>
-                <label for="listaIngresada"> Ingrese sus valores separados por comas</label>
+                <label for="listaIngresada"> Ingrese sus números separados por comas</label>
                 <input id="listaIngresada" type="text" 
                 placeholder="Exam: 1,2,4"
                 />
+                <h4 id="lista"> </h4>
                 <br>
                 <button type="button" onclick="calcularPromedio()">Calcular promedio</button>
                 <button type="button" onclick="calcularMediana()">Calcular mediana</button>
@@ -24,6 +26,32 @@
 
         </div>
 
+        <div class="container">
+            <h2> Calcule promedio ponderado </h2>
+            <form>
+                <label for="numero">
+                     Ingrese sus números con sus porcentajes o pesos uno por uno, cuando vea sus datos en la tabla puede eligir otro numero y peso para agregar</label>
+                <br>
+                <input class="inPn" id="numero" type="number" placeholder="Numero"/>
+                <input class="inPn" id="porcentaje" type="number" placeholder="Peso"/>
+                <table > 
+                    <tr>
+                        <td> Numero </td> 
+                        <td> Peso</td>
+                    </tr>
+                </table>
+                <table id="listaPon" >
+                    
+
+                </table>
+                <br>
+                <button type="button" onclick="agregarNumero()">Agregar número y peso</button>
+                <button type="button" onclick="calcularPonderado()">Calcular promedio ponderado</button>
+            </form>
+            <p id="respuestaPon"> respuesta</p>
+
+        </div>
+        <br><br><br><br><br>
 
     </header>
     

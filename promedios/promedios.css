@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/21775wide.jpg);
+
+}
+
 .container {
     width: 400px;
     padding: 30px;
@@ -8,3 +19,60 @@
     font-family: 'calibri';
     color: white;
 }
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+input {
+    background-color: #c0c0c0;
+    padding: 8px;
+    margin: 10px 0;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: 15px;
+    color: black;
+    width: 100%;
+}
+p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    margin: 25px;
+    margin-top: 15px;
+}
+
+button {
+    width: 100%;
+    background-color: #dc143c;
+    padding: 12px;
+    color: white;
+    font-size: 15px;
+    border-color: white;
+    margin: 5px 0;
+}
+
+.inPn {
+    background-color: #c0c0c0;
+    padding: 8px;
+    margin: 10px 0;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: 15px;
+    color: black;
+    width: 49%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #000;
+ }
+th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border-collapse: collapse;
+    padding: 0.3em;
+ }
