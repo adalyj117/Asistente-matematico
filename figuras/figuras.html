@@ -18,15 +18,15 @@
                 <h3><img class="figura" src="https://cdn-icons-png.flaticon.com/512/2/2276.png">
                      Cuadrado</h3>
                 <form>
-                    <label for="InputCuadrado"> Escriba cuanto mide cada lado de tu cuadrado</label>
+                    <label for="InputCuadrado"> Escriba cuanto mide cada lado de tu cuadrado </label>
                     <input id="InputCuadrado" type="number" placeholder="Lado" min="0" required/>
                     <button type="button" onclick="calcularPerimetroCuadrado()">
-                        Calcular el perímetro
+                        Calcular perímetro
                     </button>
                     <button type="button" onclick="calcularAreaCuadrado()">
                         Calcular el área
                     </button>
-                    <p class="rpta" id="resultadoCuadrado"> </p>
+                    <p class="rpta" id="resultadoCuadrado"> <hr> </p>
                 
                 </form>
         
@@ -37,20 +37,20 @@
                     Triangulo</h3>
                 <form>
                     <label for="InputTrianguloLados"> Escriba cuanto mide los lados, base y altura de tu triangulo </label>
-                    <br><input id="InputTrianguloLados" type="number" placeholder="Lado 1" min="0"/>
-                    <input id="InputTrianguloLados2" type="number" placeholder="Lado 2" min="0" />
+                    <br><input class="variosInput" id="InputTrianguloLados" type="number" placeholder="Lado 1" min="0"/>
+                    <input class="variosInput" id="InputTrianguloLados2" type="number" placeholder="Lado 2" min="0" />
                     <br>
-                    <input id="InputTrianguloBase" type="number" placeholder="Base" min="0"/>
-                    <input id="InputTrianguloAltura" type="number" placeholder="Altura" min="0"/>
+                    <input class="variosInput" id="InputTrianguloBase" type="number" placeholder="Base" min="0"/>
+                    <input class="variosInput" id="InputTrianguloAltura" type="number" placeholder="Altura" min="0"/>
                     <br>
                     <button type="button" onclick="calcularPerimetroTriangulo()">
-                        Calcular el perímetro
+                    Calcular perímetro
                     </button>
                     <button type="button" onclick="calcularAreaTriangulo()">
                         Calcular el área
                     </button>
                     
-                    <p class="rpta" id="resultadoTriangulo"> </p>
+                    <p class="rpta" id="resultadoTriangulo"> <hr> </p>
                 
                 </form>
             </div>
@@ -63,7 +63,7 @@
                     <br>
                     <input id="InputCirculo" type="number" placeholder="Radio" min="0"/>
                     <button type="button" onclick="calcularPerimetroCirculo()">
-                        Calcular el perímetro
+                        Calcular perímetro
                     </button>
                     <button type="button" onclick="calcularAreaCirculo()">
                         Calcular el área
@@ -71,7 +71,7 @@
                     <button type="button" onclick="calcularDiametroCirculo()">
                         Calcular el diametro
                     </button>
-                    <p class="rpta" id="resultadoCirculo"> </p>
+                    <p class="rpta" id="resultadoCirculo"> <hr></p>
                 
                 </form>
             </div>
@@ -83,15 +83,15 @@
                          Escriba cuanto mide los lados y base de tu triangulo isosceles 
                     </label>
                     <br>
-                    <input id="InputTrianguloIsoscelesLados" type="number" placeholder="Lado" min="0"/>
-                    <input id="InputTrianguloIsoscelesLados2" type="number" placeholder="Lado" min="0"/>
-                    <input id="InputTrianguloIsoscelesBase" type="number" placeholder="Base" min="0"/>
+                    <input class="variosInput" id="InputTrianguloIsoscelesLados" type="number" placeholder="Lado" min="0"/>
+                    <input class="variosInput" id="InputTrianguloIsoscelesLados2" type="number" placeholder="Lado" min="0"/>
+                    <input class="variosInput" id="InputTrianguloIsoscelesBase" type="number" placeholder="Base" min="0"/>
                     <br>
                     <button type="button" onclick="calcularAlturaTriangulo()">
                         Calcular la altura
                     </button>
                     
-                    <p class="rpta" id="resultadoTrianguloIsosceles"> </p>
+                    <p class="rpta" id="resultadoTrianguloIsosceles"><hr> </p>
                 
                 </form>
             </div>

@@ -1,27 +1,30 @@
 .container {
-    text-align: justify;
     display: grid; /*    para convertir el contenedor en grid (grillas)*/
-    grid-template-columns: 670px 670px;
-    grid-auto-rows: 320px;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
 
 }
 
 .item {
     border: 5px;
-    margin: 10px;
-    padding: 30px;
-    padding-top: 10px;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/000/626/167/non_2x/geometric-abstract-grey-background-for-bussines-templates-website-wallpapers-vector.jpg); 
+    margin: 50px;
+    padding: 40px;
     font-size: 1.5rem;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    align-content: center;
     border-radius: 15px;
+    font-family: 'calibri';
+    color: white;
+    background-color: #a2282a;
 }
+
+
+
 h2 {
     font-size: 2.5rem;
     text-align: center;
     font-family: "Comic Sans MS", cursive, sans-serif;
-    color: black;
+    color: white;
+    background-color: #dc143cc9;
+    padding: 15px;
 }
 .rpta {
     text-align: center;
@@ -35,18 +38,67 @@ h2 {
     width: 25px;
 }
 
-input {
-    border-radius: 5px;
-    background-color: #f8f5fa;
-    border: 1px solid #454346;
-}
-form {
-    font-family: 'Roboto';
-}
 .figura-titulo{
     width: 50px;
 }
 
 body{
     background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/21775wide.jpg);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    background-color: #c0c0c0;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: 15px;
+    color: black;
+}
+
+.variosInput {
+    width: 49%;
+}
+
+label {
+    height: 40px;
+    font-size: 18px;
+    margin: 35px;
+}
+
+button {
+    width: 32%;
+    background-color: #dc143c;
+    padding: 12px;
+    color: white;
+    font-size: 15px;
+    border-color: white;
+    margin: 10px 0;
+}
+
+.rpta {
+    border: 0.5px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+
+     
 }
