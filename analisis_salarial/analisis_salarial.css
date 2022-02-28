@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 20px;
+}
+
 .container {
-    width: 400px;
+    width: 600px;
     padding: 30px;
     background-color: #a2282a;
     margin: auto;
@@ -15,13 +19,13 @@
     color: white;
 }
 
-h2 {
+.container h2 {
     font-size: 30px;
     margin-bottom: 15px;
     text-align: center;
 }
 
-input {
+input{
     background-color: #c0c0c0;
     padding: 8px;
     margin: 10px 0;
@@ -29,17 +33,23 @@ input {
     border: 1px solid white;
     font-size: 15px;
     color: black;
-    width: 100%;
 }
-p {
-    height: 40px;
+.cont1input {
+    width: 49%;
+}
+.cont2input{
+    width: 32.5%;
+}
+.container p {
+    width: auto;
+    height: auto;
     text-align: center;
     font-size: 18px;
-    margin: 25px;
+    margin: auto;
     margin-top: 15px;
 }
 
-button {
+.container button {
     width: 100%;
     background-color: #dc143c;
     padding: 12px;
@@ -49,26 +59,23 @@ button {
     margin: 5px 0;
 }
 
-.inPn {
-    background-color: #c0c0c0;
-    padding: 8px;
-    margin: 10px 0;
-    margin-bottom: 15px;
-    border: 1px solid white;
-    font-size: 15px;
-    color: black;
-    width: 49%;
-}
-
-table {
+.container table {
     width: 100%;
     border: 1px solid #000;
  }
-
-th, td {
+.container th, td {
     width: 25%;
     text-align: left;
     vertical-align: top;
     border-collapse: collapse;
     padding: 0.3em;
  }
+
+.container ul{
+    list-style-position: inside;
+    list-style-type: circle;
+    text-align: auto;
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
+}

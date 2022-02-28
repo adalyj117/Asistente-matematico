@@ -30,7 +30,6 @@ function precioConDescuentoCupon(){
     const codigoCupon = codigo.value;
     const respuesta = document.getElementById("respuestaDescuentoCupon")
 
-    
 
     if (codigoCupon == codigos[0]){
         descuento(precioSinDescuento,10,respuesta)

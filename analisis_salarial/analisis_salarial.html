@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./analisis_salarial.css" type="text/css">
+    <title>Analisis Salarial</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2> Calcule Analisis Salarial </h2>
+            <form>
+                <label for="numero">
+                     Ingrese sus nombres y salarios, de uno en uno</label>
+                <br>
+                <input class="cont1input" id="name" type="text" placeholder="Nombre"/>
+                <input class="cont1input" id="salary" type="number" placeholder="Salario"/>
+                <table > 
+                    <tr>
+                        <td> Nombre </td> 
+                        <td> Salario</td>
+                    </tr>
+                </table>
+                <table id="listaSalary">
+                </table>
+                <br>
+                <button type="button" onclick="agregar()">Agregar salario</button>
+                <button type="button" onclick="medianaSalary()">Calcular mediana</button>
+                <button type="button" onclick="calcularTop()">Calcular mediana Top 10%</button>
+            </form>
+            <p id="respuesta"> respuesta</p>
+            <hr>
+        </div>
+        
+        <div class="container">
+            <h2>Ahorro y endeudamiento  </h2>
+            <form>
+                <label for="input">
+                     Ingrese sus nombres, salarios y gastos al mes, de uno en uno</label>
+                <br>
+                <input class="cont2input" id="nombre" type="text" placeholder="Nombre"/>
+                <input class="cont2input" id="salario" type="number" placeholder="Salario"/>
+                <input class="cont2input" id="gastos" type="number" placeholder="Gastos "/>
+                <table > 
+                    <tr>
+                        <td> Nombre </td> 
+                        <td> Salario</td>
+                        <td> Gastos</td>
+                    </tr>
+                </table>
+                <table id="listaDatos">
+                </table>
+                <br>
+                <button type="button" onclick="agregarPersona()">Agregar</button>
+                <button type="button" onclick="capacidadEndeudamiento()">Calcular capacidad de endeudamiento</button>
+                <button type="button" onclick="tasaAhorro()">Calcular tasa de ahorro</button>
+            </form>
+            <ul id="respuestaLista"></ul>
+            <p id="rpta"> respuesta</p>
+        </div>
+
+    </header>
+    <script src="./salarios.js"></script>
+    <script src="./analisis_salarial.js"></script>
+    <script src="./estudio_salarios.js"></script>
+</body>
+</html>

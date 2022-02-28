@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/21775wide.jpg);
-
-}
-
 .container {
     width: 400px;
     padding: 30px;
@@ -61,10 +56,4 @@ button {
     margin-top: 15px;
     padding: 10px;
     background-color: #b12730;
-
-     
-}
-
-.opciones {
-    width: 100%;
 }
