@@ -5,10 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras gemétricas</title>
+    <link rel="stylesheet" href="../navbar.css" type="text/css">
     <link rel="stylesheet" href="./figuras.css" type="text/css">
 </head>
 <body>
     <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="../index.html"> Platzi - Curso practico JS</a>
+              <div class="navbar-nav">
+                <a class="nav-link" href="../figuras/figuras.html">Taller #1 </a>
+                <a class="nav-link" href="../descuentos/descuentos.html">Taller #2</a>
+                <a class="nav-link" href="../promedios/promedios.html">Taller #3</a>
+                <a class="nav-link" href="../analisis_salarial/analisis_salarial.html">Taller #4</a>
+              </div>
+        </nav>
+    </header>
+    <section>
         <h2> 
             Figuras geométricas 
             <img class="figura-titulo" src="https://image.flaticon.com/icons/png/512/115/115433.png" >
@@ -18,12 +30,12 @@
                 <h3><img class="figura" src="https://cdn-icons-png.flaticon.com/512/2/2276.png">
                      Cuadrado</h3>
                 <form>
-                    <label for="InputCuadrado"> Escriba cuanto mide cada lado de tu cuadrado </label>
+                    <label for="InputCuadrado"> Escriba cuanto mide el lado de tu cuadrado </label>
                     <input id="InputCuadrado" type="number" placeholder="Lado" min="0" required/>
-                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                    <button class="esButton" type="button" onclick="calcularPerimetroCuadrado()">
                         Calcular perímetro
                     </button>
-                    <button type="button" onclick="calcularAreaCuadrado()">
+                    <button class="esButton" type="button" onclick="calcularAreaCuadrado()">
                         Calcular el área
                     </button>
                     <p class="rpta" id="resultadoCuadrado"> <hr> </p>
@@ -43,10 +55,10 @@
                     <input class="variosInput" id="InputTrianguloBase" type="number" placeholder="Base" min="0"/>
                     <input class="variosInput" id="InputTrianguloAltura" type="number" placeholder="Altura" min="0"/>
                     <br>
-                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                    <button class="esButton" type="button" onclick="calcularPerimetroTriangulo()">
                     Calcular perímetro
                     </button>
-                    <button type="button" onclick="calcularAreaTriangulo()">
+                    <button class="esButton" type="button" onclick="calcularAreaTriangulo()">
                         Calcular el área
                     </button>
                     
@@ -99,7 +111,7 @@
         </div>
 
 
-    </header>
+    </section>
     <script src="./figuras.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
@@ -15,18 +16,14 @@
     margin: 50px;
     padding: 40px;
     font-size: 1.5rem;
-    border-radius: 15px;
-    font-family: 'calibri';
     color: white;
-    background-color: #a2282a;
+    background-color: #092b09;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 50px;
     text-align: center;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    color: white;
-    background-color: #dc143cc9;
+    color: black;
     padding: 15px;
 }
 
@@ -36,7 +33,6 @@ h2 {
     margin-right: 30px;
     font-size: 1rem;
     text-align: center;
-    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .figura{
@@ -70,17 +66,20 @@ input {
 label {
     height: 40px;
     font-size: 18px;
-    margin: 35px;
 }
 
 button {
     width: 32%;
-    background-color: #dc143c;
+    background-color: #092b09;
     padding: 12px;
     color: white;
     font-size: 15px;
     border-color: white;
     margin: 10px 0;
+}
+
+.esButton{
+    width: 49%;
 }
 
 .rpta {

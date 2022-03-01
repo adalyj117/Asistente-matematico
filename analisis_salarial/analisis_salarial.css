@@ -4,16 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
-    padding: 20px;
-}
 
 .container {
     width: 600px;
     padding: 30px;
-    background-color: #a2282a;
+    background-color: #092b09;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 70px;
     border-radius: 10px;
     font-family: 'calibri';
     color: white;
@@ -51,7 +48,7 @@ input{
 
 .container button {
     width: 100%;
-    background-color: #dc143c;
+    background-color: #092b09;
     padding: 12px;
     color: white;
     font-size: 15px;
