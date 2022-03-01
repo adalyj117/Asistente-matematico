@@ -55,11 +55,8 @@ button {
 }
 
 .respuesta {
-    border: 0.5px solid white;
     width: 100%;
     text-align: center;
     margin: auto;
     margin-top: 15px;
-    padding: 10px;
-    background-color: #092b09;
 }

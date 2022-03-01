@@ -1,7 +1,17 @@
-section{
+/* section{
     display: grid; 
     grid-template-columns: auto auto auto auto;
     grid-auto-rows: auto;
+} */
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home a{
+    flex: 1;
+    min-width: 250px;
 }
 
 div{
@@ -25,6 +35,31 @@ div{
 }
 
 .opciones img{
-    height: 200px;
+    height: 150px;
     margin: 30px;
+}
+
+@media screen and (max-width: 858px) {
+    div {
+        font-size: small;
+        margin: 40px;
+    }
+    .opciones{
+        margin: auto;
+        margin-top: 40px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: #092b09;
+    }
+    
+    .opciones img{
+        height: 70px;
+        margin: 10px;
+    }
+    .home a{
+        flex: 2;
+        min-width: 150px;
+    }
+
 }

@@ -7,6 +7,7 @@
     <title>Descuentos</title>
     <link rel="stylesheet" href="../navbar.css" type="text/css">
     <link rel="stylesheet" href="./descuentos.css" type="text/css">
+    <script src="../navbar.js"></script>
 </head>
 <body>
     <header>
@@ -18,9 +19,12 @@
                 <a class="nav-link" href="../promedios/promedios.html">Taller #3</a>
                 <a class="nav-link" href="../analisis_salarial/analisis_salarial.html">Taller #4</a>
               </div>
+              <span class="btn_menu">
+                <img src="http://assets.stickpng.com/thumbs/588a64e7d06f6719692a2d11.png"></img>
+            </span>
         </nav>
     </header>
-    <section>
+    <section class="home">
         <div class="container">
             <h3 class="titulo"> Descuentos</h3>
             <p class="descripcion">Halle el precio que debe pagar por un producto con descuento!!</p>
@@ -32,10 +36,8 @@
                 <label for="descuento">Escriba el descuento de su producto: </label>
                 <br><input id="descuento" type="number" placeholder="Descuento en %">
                 <br><button type="button" onclick="precioConDescuento()"> Hallar precio con descuento </button>
-                <div class="respuesta">
-                    <p id="respuesta">  Respuesta</p>
-                    <br>
-                </div>
+                <p class="respuesta" id="respuestaDescuentoCupon">Respuesta</p>
+                <hr>
             </form>
         </div>
 
@@ -50,10 +52,9 @@
                 <label for="codigoCupon">Escriba el codigo de su cupón: </label>
                 <br><input id="codigoCupon" type="text" placeholder="Codigo">
                 <br><button type="button" onclick="precioConDescuentoCupon()"> Hallar precio con descuento </button>
-                <div class="respuesta">
-                    <p id="respuestaDescuentoCupon">  Respuesta</p>
-                    <br>
-                </div>
+                
+                <p class="respuesta" id="respuestaDescuentoCupon">Respuesta</p>
+                <hr>
             </form>
         </div>
 

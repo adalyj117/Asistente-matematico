@@ -5,7 +5,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.container {
+section {
     display: grid; /*    para convertir el contenedor en grid (grillas)*/
     grid-template-columns: auto auto;
     grid-auto-rows: auto;
@@ -60,7 +60,7 @@ input {
 }
 
 .variosInput {
-    width: 49%;
+    width: 100%;
 }
 
 label {
@@ -69,17 +69,13 @@ label {
 }
 
 button {
-    width: 32%;
+    width: 100%;
     background-color: #092b09;
     padding: 12px;
     color: white;
     font-size: 15px;
     border-color: white;
     margin: 10px 0;
-}
-
-.esButton{
-    width: 49%;
 }
 
 .rpta {
@@ -89,6 +85,26 @@ button {
     margin: auto;
     margin-top: 15px;
     padding: 10px;
+}
 
-     
+@media screen and (max-width: 858px) {
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        color: black;
+        padding: 15px;
+    }
+    .figura{
+        width: 20px;
+    }
+    
+    .figura-titulo{
+        width: 35px;
+    }
+    
+    h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
 }

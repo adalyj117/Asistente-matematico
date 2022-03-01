@@ -7,48 +7,132 @@
  body{
     background-color: #f3f3f3f5;
 } 
+
 .navbar{
     background-color: black;
-    padding: 10px;
-    display: table;
-    width: 100%;
+    justify-content: space-between;
+    width: 100vw;
+    display: flex;
+    height: 75px;
+    border-bottom: 1px solid white;
+    align-items: center;
 }
 
 .navbar-brand{
-    display: inline-block;
     color: white;
-    padding: 5px 30px;
+    padding: 0 70px;
     text-decoration: none;
-    font-size: 25px;
-}
-.navbar-brand{
-    float: left;
+    font-size: 27px;
     font-weight: bold;
 }
 
+.navbar-nav{
+    display: flex;
+    margin: auto;
+    margin-right: 20px;
+} 
+
 .nav-link{
-    display: inline-block;
+    margin: 0 5px;
+    display: block;
     color: white;
     font-size: 18px;
-    padding: 10px 30px;
+    padding: 7px 13px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .nav-link:hover{
     color: #092b09;
     background-color: #c0c0c0;
     font-weight: 900;
+    transition: .4s;
 }
 
-.navbar-nav{
-    display: flex;
-    float: right;
-    margin: auto;
-} 
+.btn_menu{
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn_menu img{
+    height: 40px;
+}
+
+.navbar-nav.show{
+    top: 65px;
+}
+
+@media screen and (max-width: 956px) {
+    .navbar-brand{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 858px) {
+    .navbar{
+        height: 65px;
+    }
+    .btn_menu{
+        display: inline-flex;
+    }
+
+    .navbar-nav{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: #f3f3f3f5;
+        top: -200vw;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .nav-link{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .nav-link:hover{
+        background: none;
+    }
+    .nav-link{
+        color: #092b09;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .navbar-brand{
+        font-size: 23px;
+        padding-left: 35px;
+    }
+}
+@media screen and (max-width: 858px) and (orientation: landscape) {
+    .navbar-nav{
+        overflow: scroll;
+        height: calc(100% - 65px);
+        
+    }
+    .nav-link{
+        margin: 5px 0 0 0;
+    }
+}
+
+
+
 
 button:hover{
     background-color: black;
 }
 
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.home div{
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
 
