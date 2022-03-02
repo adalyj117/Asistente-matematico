@@ -35,17 +35,15 @@ input {
     border: 1px solid white;
     font-size: 15px;
     color: black;
+    margin: 10px 0;
 }
 .home p {
-    height: 40px;
+    height: auto;
     text-align: center;
     font-size: 18px;
-    margin: 25px;
     margin-top: 15px;
 }
-.descripcion{
-    height: auto;
-}
+
 button {
     width: 100%;
     background-color: #092b09;
@@ -61,4 +59,11 @@ button {
     text-align: center;
     margin: auto;
     margin-top: 15px;
+}
+label{
+    margin-top: 15px;
+    padding: 0;
+}
+.descripcion{
+    padding: 0;
 }
