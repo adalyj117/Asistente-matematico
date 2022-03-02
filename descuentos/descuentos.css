@@ -36,14 +36,16 @@ input {
     font-size: 15px;
     color: black;
 }
-p {
+.home p {
     height: 40px;
     text-align: center;
     font-size: 18px;
     margin: 25px;
     margin-top: 15px;
 }
-
+.descripcion{
+    height: auto;
+}
 button {
     width: 100%;
     background-color: #092b09;

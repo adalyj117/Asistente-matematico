@@ -36,7 +36,7 @@ input {
     color: black;
     width: 100%;
 }
-p {
+.home p {
     height: 40px;
     text-align: center;
     font-size: 18px;

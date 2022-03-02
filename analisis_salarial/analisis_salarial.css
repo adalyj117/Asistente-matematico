@@ -76,3 +76,13 @@ input{
     padding: 5px;
     margin: 10px;
 }
+
+@media screen and (max-width: 858px) {
+    .cont1input {
+        width: 100%;
+    }
+    .cont2input{
+        width: 100%;
+    }
+
+}

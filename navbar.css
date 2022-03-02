@@ -9,7 +9,7 @@
 } 
 
 .navbar{
-    background-color: black;
+    background-color: #092b09;
     justify-content: space-between;
     width: 100vw;
     display: flex;
@@ -53,7 +53,10 @@
     margin-right: 30px;
     cursor: pointer;
     display: none;
+    color: white;
+    font-size: 30px;
 }
+
 
 .btn_menu img{
     height: 40px;
@@ -120,6 +123,7 @@
 
 
 
+/* MODIFICACIONES GENERALES */
 
 button:hover{
     background-color: black;
@@ -128,11 +132,25 @@ button:hover{
 .home{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 35px;
+}
+@media screen and (max-width: 858px)  {
+    .home{
+        margin-top: 20px;
+    }
 }
 
 .home div{
     flex: 1;
     min-width: 250px;
     margin: 20px;
+    background-color: #c0c0c0;
+    color: #092b09;
+    border: 1px solid #092b09;
 }
-
+.home div input{
+    border: 1px solid #092b09;
+}
+hr{
+    border: 0.5px solid #092b09;
+}
