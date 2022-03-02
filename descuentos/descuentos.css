@@ -12,13 +12,10 @@ section{
 .container {
     width: 500px;
     padding: 30px;
-    background-color: #092b09;
     margin: auto;
     margin-top: 70px;
     border-radius: 10px;
-    border: solid black;
     font-family: 'calibri';
-    color: white;
 }
 
 .titulo {

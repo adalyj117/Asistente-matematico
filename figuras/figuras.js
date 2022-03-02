@@ -5,7 +5,10 @@ function operacion(operacion, funcionOperacion){
     const lado = document.getElementById("InputCuadrado");
     const respuesta = document.getElementById("resultadoCuadrado");
     const rpta = funcionOperacion(lado.value)
-    respuesta.innerHTML = `El ${operacion} del cuadrado es: `+ rpta
+    if (lado.value != ""){
+        respuesta.innerHTML = `El ${operacion} del cuadrado es: `+ rpta
+    }
+    
 }
 const calcularPerimetroCuadrado = () => operacion("perimetro",perimetroCuadrado);
 const calcularAreaCuadrado = () => operacion("area",areaCuadrado); 
@@ -20,8 +23,16 @@ function operacionTriangulo(operacion,funcionOperacion){
     const base = document.getElementById("InputTrianguloBase");
     const altura = document.getElementById("InputTrianguloAltura");
     const respuesta = document.getElementById("resultadoTriangulo");
-    const rpta = funcionOperacion(lado1.value, lado2.value, base.value, altura.value)
-    respuesta.innerHTML = `El ${operacion} del triangulo es: `+ rpta
+    if(operacion == "perimetro" && (lado1.value == ""|| lado2.value == ""|| base.value== "")){
+        respuesta.innerText = "Ingrese todos los lados y base para calcular el perímetro"
+    } else if (operacion == "area" && (altura.value == ""  || base.value== "" ) ) {
+        respuesta.innerText = "Ingrese la altura y base"
+    }else{
+        const rpta = funcionOperacion(lado1.value, lado2.value, base.value, altura.value)
+        respuesta.innerHTML = `El ${operacion} del triangulo es: `+ rpta
+    }
+
+    
 }
 const calcularPerimetroTriangulo = () => operacionTriangulo("perimetro",perimetroTriangulo);
 const calcularAreaTriangulo = () =>operacionTriangulo("area",areaTriangulo);
@@ -35,7 +46,9 @@ function operacionCirculo(operacion, funcionOperacion){
     const radio = document.getElementById("InputCirculo");
     const respuesta = document.getElementById("resultadoCirculo");
     const rpta = funcionOperacion(radio.value)
-    respuesta.innerHTML = `El ${operacion} del circulo es: `+ rpta
+    if (radio.value != ""){
+        respuesta.innerHTML = `El ${operacion} del circulo es: `+ rpta
+    }
 }
 const calcularPerimetroCirculo = () => operacionCirculo("perimetro",perimetroCirculo);
 const calcularAreaCirculo = () => operacionCirculo("area",areaCirculo); 
@@ -51,9 +64,15 @@ function operacionTrianguloIsosceles(operacion,funcionOperacion){
     const baseI = document.getElementById("InputTrianguloIsoscelesBase");
     const respuesta = document.getElementById("resultadoTrianguloIsosceles");
     const rpta = funcionOperacion(ladoI1.value, ladoI2.value, baseI.value)
-    if (ladoI1.value == ladoI2.value){
+    if(ladoI1.value == ""|| ladoI2.value == ""|| baseI.value== ""){
+        respuesta.innerText = "Ingrese todos los lados y base para calcular la altura"
+    }else{
+        if (ladoI1.value == ladoI2.value){
         respuesta.innerHTML = `La ${operacion} del triangulo es: `+ rpta
-    } else { respuesta.innerHTML = "El triangulo no es isosceles"}
+        } else { respuesta.innerHTML = "El triangulo no es isosceles"}
+    }
+
+    
 }
 const calcularAlturaTriangulo = () => operacionTrianguloIsosceles("altura",alturaTriangulo);
 
